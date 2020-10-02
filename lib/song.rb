@@ -32,4 +32,10 @@ class Song
     genre
     end
   end 
+  
+  def self.artist_count
+    @@artists.inject(Hash.new(0)) do |artist, n|
+    artist[n] += 1
+    artist
+    end
 end
