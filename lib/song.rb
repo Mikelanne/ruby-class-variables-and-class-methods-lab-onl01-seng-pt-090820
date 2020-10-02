@@ -27,9 +27,9 @@ class Song
   end
   
   def self.genre_count
-   @@genres.inject(Hash.new(0)) do |hash, e|
-    hash[e] += 1
-    hash
+   @@genres.inject(Hash.new(0)) do |genre, n|
+    genre[n] += 1
+    genre
     end
   end 
 end
