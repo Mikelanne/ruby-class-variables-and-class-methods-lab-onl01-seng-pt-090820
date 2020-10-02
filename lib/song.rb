@@ -38,4 +38,5 @@ class Song
     artist[n] += 1
     artist
     end
+  end
 end
